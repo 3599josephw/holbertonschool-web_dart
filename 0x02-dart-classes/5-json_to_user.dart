@@ -6,7 +6,7 @@ class User {
 	User({required this.id, required this.name, required this.age, required this.height});
 
 	Map toJson() {
-		return {'name': '${this.name}', 'age': '${this.age}', 'height': '${this.height}', 'id': '${this.id}'};
+		return {'id': '${this.id}', 'name': '${this.name}', 'age': '${this.age}', 'height': '${this.height}'};
 	}
 
 	static User fromJson(Map<dynamic, dynamic> userJson) {
@@ -15,6 +15,6 @@ class User {
 
 	@override
 	String toString() {
-		return "User(id: $id, name: $name, age: $age, height: $height)";
+		return "User(id : $id, name: $name, age: $age, height: $height)";
 	}
 }
