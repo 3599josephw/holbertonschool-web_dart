@@ -10,7 +10,7 @@ class Password {
 		return regExp.hasMatch(this._password);
 	}
 
-	String get getPass {
+	String get password {
 		return this._password;
 	}
 
