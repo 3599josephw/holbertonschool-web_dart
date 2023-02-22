@@ -1,4 +1,4 @@
-Future<String> generateQuote(id) {
+Future<String> generateQuote(id) async {
 	try {
 		if (id == 1 ) {
 			return("Walter White : I am not in danger, Skyler. I am the danger!");
@@ -15,5 +15,4 @@ Future<String> generateQuote(id) {
 	} catch (e) {
 		return "There are no quotes";
 	}
-	
 }
