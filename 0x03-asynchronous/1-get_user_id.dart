@@ -1,6 +1,8 @@
 import '1-main.dart';
+import 'dart:convert';
+
 
 Future<String> getUserId() async {
 	var user = await fetchUserData();
-	return user.replaceAll('"', "").split(": ")[1].split(", ")[0];
+	return json.decode(await fetchUserData())['id'];
 }
