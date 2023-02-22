@@ -5,7 +5,7 @@ import 'dart:convert';
 Future<String> greetUser() async {
 	try {
 		var user = await fetchUserData();
-		return "Hello ${json.decode(await fetchUserData())['username']}";
+		return "${json.decode(await fetchUserData())['username']}";
 	} catch (e) {
 		return "$e";
 	}
